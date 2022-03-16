@@ -24,16 +24,15 @@
 }
 
 .logo {
-  max-width: 30%;
-  height: auto;
-  width: auto;
+  width: 30%;
   cursor: pointer;
   margin: 30px 0;
 }
 
 .menu-icon {
-  width: 60px;
+  width: 50px;
   cursor: pointer;
+  display: none;
 }
 
 nav {
@@ -70,9 +69,9 @@ nav ul li a:hover {
 }
 
 .row-container {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
+  padding-left: 8%;
+  padding-right: 8%;
+}
 
 .row {
   display: flex;
@@ -121,7 +120,7 @@ button {
   transition: width 0.6s;
 }
 button img {
-  width: 30px;
+  width: 17px;
   display: none;
 }
 
@@ -139,9 +138,212 @@ button:hover {
   content: "";
   width: 10px;
   height: 57%;
-  background: #0a81ab;
+  background: linear-gradient(#0a81ab, #ffffff);
   position: absolute;
   left: -40px;
   top: 8px;
 }
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+.col-2 .subs-icon {
+  width: 80%;
+}
+.color-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, #0a81ab, #ffffff);
+  border-radius: 0 0 0 50px;
+  height: 100%;
+  width: 30%;
+  z-index: -1;
+  transform: translateX(175px);
+}
+.rates-btn img {
+  width: 35px;
+  margin-bottom: 5px;
+}
+.rates-btn {
+  text-align: center;
+  margin: 250px 0 30px 0;
+}
 
+/* .footer-container {
+  background-color: #0a81ab;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  max-width: 15%;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  margin: 30px 0;
+} */
+
+.social-links img {
+  height: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#0a81ab, #ffffff);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #000000;
+    font-family: sans-serif;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 0.4s;
+  }
+  .logo {
+    width: 45%;
+  }
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .col-2 {
+    flex-basis: 100;
+    margin-bottom: 50px;
+  }
+  .col-2 .subs-icon {
+    width: 77%;
+  }
+  .color-box {
+    border-radius: 0 0 0 30px;
+    height: 100%;
+    width: 40%;
+    transform: translateX(75px);
+  }
+  .rates-btn img {
+    width: 25px;
+    margin-bottom: 3px;
+  }
+  .rates-btn {
+    font-size: small;
+    text-align: center;
+    margin: 50px 25px 40px 0;
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 25px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+  .color-box {
+    border-radius: 0 0 0 30px;
+    height: 100%;
+    width: 25%;
+    transform: translateX(190px);
+  }
+  .rates-btn img {
+    width: 30px;
+    margin-bottom: 3px;
+  }
+  .rates-btn {
+    font-size: large;
+    text-align: center;
+    margin: 20px 25px 40px 20px;
+  }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+  .color-box {
+    border-radius: 0 0 0 30px;
+    height: 100%;
+    width: 35%;
+    transform: translateX(175px);
+  }
+  .rates-btn img {
+    width: 35px;
+    margin-bottom: 3px;
+  }
+  .rates-btn {
+    font-size: large;
+    text-align: center;
+    margin: 150px 50px 40px 20px;
+  }
+ }
+
+ @media only screen and (min-width: 800px) {
+  .color-box {
+    border-radius: 0 0 0 30px;
+    height: 100%;
+    width: 55%;
+    transform: translateX(175px);
+  }
+  .rates-btn img {
+    width: 30px;
+    margin-bottom: 3px;
+  }
+  .rates-btn {
+    font-size: large;
+    text-align: center;
+    margin: 75px 120px 40px 20px;
+  }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  .color-box {
+    border-radius: 0 0 0 30px;
+    height: 100%;
+    width: 30%;
+    transform: translateX(175px);
+  }
+  .rates-btn img {
+    width: 35px;
+    margin-bottom: 3px;
+  }
+  .rates-btn {
+    font-size: large;
+    text-align: center;
+    margin: 250px 25px 40px 25px;
+  }
+ }
