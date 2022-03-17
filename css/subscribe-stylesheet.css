@@ -1,74 +1,3 @@
-/* header */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.container {
-  width: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.navbar-container {
-  background-color: #0a81ab;
-  padding-left: 8%;
-  padding-right: 8%;
-}
-
-.navbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 15%;
-  cursor: pointer;
-  margin: 30px 0;
-}
-
-.menu-icon {
-  width: 50px;
-  cursor: pointer;
-  display: none;
-}
-
-nav {
-  flex: 1;
-  text-align: right;
-}
-
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 30px;
-}
-
-nav ul li a {
-  list-style: none;
-  display: inline-block;
-  padding-bottom: 1.5px;
-  background: linear-gradient(#ffffff, #ffffff) center bottom;
-  background-size: 0% 1px;
-  background-repeat: no-repeat;
-  transition: all 0.55s;
-}
-
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Heebo", sans-serif;
-  font-family: "Noto Serif Display", serif;
-  font-family: "Poppins", sans-serif;
-}
-
-nav ul li a:hover {
-  background-size: 100% 1px;
-}
-
 /* subscribe page content CSS */
 
 .row-container {
@@ -117,7 +46,7 @@ button {
   padding: 12px 10px;
   outline: none;
   color: #ffffff;
-  background: #0a81ab;
+  background: #203464;
   border-radius: 6px;
   cursor: pointer;
   transition: width 0.6s;
@@ -141,7 +70,7 @@ button:hover {
   content: "";
   width: 10px;
   height: 57%;
-  background: linear-gradient(#0a81ab, #ffffff);
+  background: linear-gradient(#203464, #ffffff);
   position: absolute;
   left: -40px;
   top: 8px;
@@ -159,7 +88,7 @@ button:hover {
   position: absolute;
   right: 0;
   top: 0;
-  background: linear-gradient(to right, #0a81ab, #ffffff);
+  background: linear-gradient(to right, #203464, #ffffff);
   border-radius: 0 0 0 50px;
   height: 100%;
   width: 30%;
@@ -175,49 +104,11 @@ button:hover {
   margin: 250px 0 30px 0;
 }
 
-/* .footer-container {
-  background-color: #0a81ab;
-  padding-left: 8%;
-  padding-right: 8%;
-}
-
-.footer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.footer-logo {
-  max-width: 15%;
-  height: auto;
-  width: auto;
-  cursor: pointer;
-  margin: 30px 0;
-} */
-
-
-/* footer */
-
-.social-links img {
-  height: 25px;
-  margin: 10px;
-  cursor: pointer;
-}
-
-.social-links {
-  text-align: center;
-}
-
-.social-links a {
-  text-decoration: none;
-  text-align: center;
-}
-
 
 @media only screen and (max-width: 600px) {
   nav ul {
     width: 100%;
-    background: linear-gradient(#0a81ab, #ffffff);
+    background: linear-gradient(#203464, #ffffff);
     position: absolute;
     top: 75px;
     right: 0;
@@ -240,7 +131,7 @@ button:hover {
     transition: 0.4s;
   }
   .logo {
-    width: 45%;
+    width: 55%;
   }
   .row {
     flex-direction: column-reverse;
@@ -256,7 +147,7 @@ button:hover {
   .color-box {
     border-radius: 0 0 0 30px;
     height: 100%;
-    width: 40%;
+    width: 35%;
     transform: translateX(75px);
   }
   .rates-btn img {
@@ -264,9 +155,9 @@ button:hover {
     margin-bottom: 3px;
   }
   .rates-btn {
-    font-size: small;
+    font-size: smaller;
     text-align: center;
-    margin: 50px 25px 40px 0;
+    margin: 50px 35px 35px 0;
   }
   .col-1 {
     flex-basis: 100%;
@@ -280,12 +171,12 @@ button:hover {
 }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
+ @media only screen and (min-width: 600px) and (orientation: landscape){
   .col-2 .color-box {
     border-radius: 0 0 0 30px;
     height: 100%;
-    width: 25%;
-    transform: translateX(190px);
+    width: 33%;
+    transform: translateX(175px);
   }
   .rates-btn img {
     width: 30px;
@@ -294,7 +185,10 @@ button:hover {
   .rates-btn {
     font-size: large;
     text-align: center;
-    margin: 20px 25px 40px 20px;
+    margin: 100px 70px 25px 30px;
+  }
+  .logo {
+    width: 30%;
   }
  }
  
@@ -303,7 +197,7 @@ button:hover {
   .color-box {
     border-radius: 0 0 0 30px;
     height: 100%;
-    width: 35%;
+    width: 55%;
     transform: translateX(175px);
   }
   .rates-btn img {
@@ -313,11 +207,15 @@ button:hover {
   .rates-btn {
     font-size: large;
     text-align: center;
-    margin: 150px 50px 40px 20px;
+    margin: 100px 140px 40px 20px;
   }
- }
-
- @media only screen and (min-width: 800px) {
+  .logo {
+    width: 30%;
+  }
+ } 
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
   .color-box {
     border-radius: 0 0 0 30px;
     height: 100%;
@@ -325,31 +223,16 @@ button:hover {
     transform: translateX(175px);
   }
   .rates-btn img {
-    width: 30px;
-    margin-bottom: 3px;
-  }
-  .rates-btn {
-    font-size: large;
-    text-align: center;
-    margin: 75px 120px 40px 20px;
-  }
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-  .color-box {
-    border-radius: 0 0 0 30px;
-    height: 100%;
-    width: 30%;
-    transform: translateX(175px);
-  }
-  .rates-btn img {
     width: 35px;
     margin-bottom: 3px;
   }
   .rates-btn {
     font-size: large;
     text-align: center;
-    margin: 250px 25px 40px 25px;
+    margin: 200px 25px 40px 25px;
+  }
+  .logo {
+    width: 20%;
   }
  }
+
