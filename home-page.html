@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./media/icons/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Noto+Serif+Display&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/home-page-stylesheet.css">
+    <title>Bangkok Post - Breaking News | Thailand News | Worldwide News</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <div class="navbar">
+                <img onclick="window.location.href='home-page.html'" src="./media/icons/BP-logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="#">THAILAND</a></li>
+                        <li><a href="#">WORLD</a></li>
+                        <li><a href="#">ECONOMIC</a></li>
+                        <li><a href="./component/subscribe.html">SUBSCRIBE</a></li>
+                    </ul>
+                </nav>
+                <img src="./media/icons/menu-icon.png" class="menu-icon" onClick="toggleMenu()" />
+            </div>
+        </div>
+
+
+        <div class="social-links">
+            <img src="./media/icons/BP-logo-trans-BW.png" id='footer-logo' />
+            <a href="https://www.facebook.com/bangkokpost" target="_blank">
+                <img src="./media/icons/fb-icon-BW.png" />
+            </a>
+            <a href="https://www.instagram.com/bangkokpost_official/" target="_blank">
+                <img src="./media/icons/ig-icon-BW.png" />
+            </a>
+            <a href="https://twitter.com/bangkokpostnews" target="_blank">
+                <img src="./media/icons/tw-icon-BW.png" />
+            </a>
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px"
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            } else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/* header */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .navbar-container {
+    background-color: #0a81ab;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 15%;
+    cursor: pointer;
+    margin: 30px 0;
+  }
+  
+  .menu-icon {
+    width: 50px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  nav ul li a {
+    list-style: none;
+    display: inline-block;
+    padding-bottom: 1.5px;
+    background: linear-gradient(#ffffff, #ffffff) center bottom;
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    transition: all 0.55s;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Heebo", sans-serif;
+    font-family: "Noto Serif Display", serif;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  nav ul li a:hover {
+    background-size: 100% 1px;
+  }
+  
+  /* world news content CSS goes here */
+  
+  /* footer */
+  
+  .social-links img {
+    height: 25px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .social-links {
+    text-align: center;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    nav ul {
+      width: 100%;
+      background: linear-gradient(#0a81ab, #ffffff);
+      position: absolute;
+      top: 75px;
+      right: 0;
+      z-index: 2;
+    }
+    nav ul li {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    nav ul li a {
+      color: #000000;
+      font-family: sans-serif;
+    }
+    .menu-icon {
+      display: block;
+    }
+    #menuList {
+      overflow: hidden;
+      transition: 0.4s;
+    }
+    .logo {
+      width: 45%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {}
+  
+   /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {}
+  
+   /* Extra large devices (large laptops and desktops, 1200px and up) */
+  
+  @media only screen and (min-width: 1200px) {}

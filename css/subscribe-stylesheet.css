@@ -1,3 +1,4 @@
+/* header */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@
 }
 
 .logo {
-  width: 30%;
+  width: 15%;
   cursor: pointer;
   margin: 30px 0;
 }
@@ -67,6 +68,8 @@ nav ul li a {
 nav ul li a:hover {
   background-size: 100% 1px;
 }
+
+/* subscribe page content CSS */
 
 .row-container {
   padding-left: 8%;
@@ -192,6 +195,9 @@ button:hover {
   margin: 30px 0;
 } */
 
+
+/* footer */
+
 .social-links img {
   height: 25px;
   margin: 10px;
@@ -275,7 +281,7 @@ button:hover {
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 600px) {
-  .color-box {
+  .col-2 .color-box {
     border-radius: 0 0 0 30px;
     height: 100%;
     width: 25%;
