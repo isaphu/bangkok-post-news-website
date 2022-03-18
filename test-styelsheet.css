@@ -71,6 +71,8 @@
   background-size: 100% 1px;
 }
 
+/* world news content CSS goes here */
+
 /* footer */
 
 .footer .container {
@@ -88,7 +90,7 @@
   background-color: #203464;
   padding: 70px 0;
   margin: 0;
-  padding: 2%;
+  padding: 10%;
 }
 .footer-col {
   width: 25%;
