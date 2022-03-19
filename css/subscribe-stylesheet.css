@@ -55,11 +55,9 @@ button img {
   width: 17px;
   display: none;
 }
-
 button:hover img {
   display: block;
 }
-
 button:hover {
   width: 160px;
   display: flex;
@@ -103,7 +101,6 @@ button:hover {
   text-align: center;
   margin: 250px 0 30px 0;
 }
-
 
 @media only screen and (max-width: 600px) {
   nav ul {
@@ -170,8 +167,8 @@ button:hover {
   }
 }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) and (orientation: landscape){
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (orientation: landscape) {
   .col-2 .color-box {
     border-radius: 0 0 0 60px;
     height: 100%;
@@ -190,10 +187,10 @@ button:hover {
   .logo {
     width: 30%;
   }
- }
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   .color-box {
     border-radius: 0 0 0 30px;
     height: 100%;
@@ -212,10 +209,10 @@ button:hover {
   .logo {
     width: 30%;
   }
- } 
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   .color-box {
     border-radius: 0 0 0 30px;
     height: 100%;
@@ -234,5 +231,4 @@ button:hover {
   .logo {
     width: 20%;
   }
- }
-
+}
