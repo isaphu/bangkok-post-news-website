@@ -7,7 +7,7 @@
   font-family: sans-serif;
 }
 
-body {
+body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,6 @@ body {
 .main-area{
   flex:1;
 }
-
 
 .navbar-container {
   background-color: #203464;
@@ -98,10 +97,10 @@ nav ul li a:hover {
   list-style: none;
 }
 .footer {
+  flex:1;
   background-color: #203464;
-  padding: 70px 0px;
   margin: 0;
-  padding: 10%;
+  padding: 2rem 8% 2rem 8%;
 }
 .footer-col {
   width: 25%;
@@ -197,6 +196,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 767px) {
+  .footer .row{
+    flex-direction: column;
+  }
   .footer-col {
     width: 50%;
     margin-bottom: 30px;

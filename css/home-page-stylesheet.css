@@ -1,0 +1,285 @@
+/* STORIE STYLE */
+.home-page-main-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories_wrapper {
+  flex-grow: 1;
+  display: grid;
+  grid-template-areas:
+    "top-stories recommend-storie"
+    "other-storie other-storie";
+  column-gap: 1rem;
+  row-gap: 10rem;
+  padding: 2rem 8%;
+}
+
+.top-storie_wrapper {
+  grid-area: top-stories;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-area {
+  padding: 2rem 8% 0 8%;
+}
+
+.top-storie_link {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.top-storie_link:hover {
+  color: lightblue;
+}
+
+.top-storie_date {
+  font-size: 0.8rem;
+  color: gray;
+  padding: 1rem 0;
+}
+
+.top-storie_card {
+  cursor: pointer;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.top-storie_image-wrapper {
+  width: 100%;
+}
+
+.top-storie_image {
+  display: block;
+  min-height: 190px;
+  background-color: #3775cf;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.top-storie_content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.top-storie_headline {
+  color: black;
+  font-size: 0.75rem;
+}
+
+.top-storie_title {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.top-storie_paragraph {
+  color: black;
+  font-size: 0.875rem;
+}
+
+.recommend-storie_wrapper {
+  grid-area: recommend-storie;
+}
+
+.recommend-storie_date {
+  font-size: 0.8rem;
+  color: gray;
+  padding: 1rem 0;
+}
+
+.recommend-storie_card {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  column-gap: 0.5rem;
+}
+
+.recommend-storie_card:not(:first-of-type) {
+  border-top: 1px solid lightgray;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.recommend-storie_image {
+  display: block;
+  background-color: #3775cf;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.recommend-storie_content {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.recommend-storie_headline {
+  color: black;
+  font-size: 0.75rem;
+}
+
+.recommend-storie_title {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.recommend-storie_paragraph {
+  color: black;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.other-storie_wrapper {
+  border-top: 1px solid lightgray;
+  grid-area: other-storie;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.other-storie_card:not(:first-of-type) {
+  border-left: 1px solid lightgray;
+}
+
+.other-storie_card {
+  padding: 1rem;
+}
+
+.other-storie_content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.covid-track_wrapper {
+  padding: 8rem 8%;
+  color: #ffffff;
+  background-color: #2c488b;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.covid-track_title {
+  text-align: center;
+}
+
+.covid-track_last-update {
+  text-align: center;
+}
+
+.covid-track_orders {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.covid-track_list {
+  list-style-type: none;
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.covid-track_list:nth-child(1) {
+  background-color: #2B62CF;
+}
+
+.covid-track_list:nth-child(2) {
+  background-color: #01873A;
+}
+
+.covid-track_list:nth-child(3) {
+  background-color: #BA004B;
+}
+
+.covid-track_list:nth-child(4) {
+  background-color: #798587;
+}
+
+.covid-track_case-title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.covid-track_number {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.daily-info_wrapper {
+  padding: 4rem 8%;
+  background-color: #deebf6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  align-items: center;
+}
+
+.daily-info_paragraph {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.daily-info_form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.daily-info_email-input {
+  padding: 0.25rem;
+  flex: 1;
+}
+
+.daily-info_submit {
+  padding: 4px 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-weight: bold;
+  background-color: #203464;
+  color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .stories_wrapper {
+    grid-template-areas:
+      "top-stories"
+      "recommend-storie"
+      "other-storie";
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+  .other-storie_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .other-storie_card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .other-storie_card:not(:first-child) {
+    border-top: 1px solid lightgray;
+    border-left: unset;
+  }
+  .covid-track_orders {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}

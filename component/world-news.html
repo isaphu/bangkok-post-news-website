@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Noto+Serif+Display&family=Poppins:wght@600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/world-news-stylesheet.css">
+    <link rel="stylesheet" href="../css/news-stylesheet.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Bangkok Post - Breaking News | Thailand News | Worldwide News</title>
@@ -24,7 +24,7 @@
                     <ul id="menuList">
                         <li><a href="../component/thailand-news.html">THAILAND</a></li>
                         <li><a href="../component/world-news.html">WORLD</a></li>
-                        <li><a href="../component/economic-news.html">ECONOMIC</a></li>
+                        <li><a href="../component/news-search.html">SEARCH™</a></li>
                         <li><a href="../component/subscribe.html">SUBSCRIBE</a></li>
                     </ul>
                 </nav>
@@ -32,26 +32,174 @@
             </div>
         </div>
 
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4><a href="/index.html"> <img src="../media/icons/BP-logo.png" style="width: 10rem;"></a></h4>
-                        <ul>
-                            <li><a href="./thailand-news.html">THAILAND</a></li>
-                            <li><a href="./world-news.html">WORLD</a></li>
-                            <li><a href="./economic-news.html">ECONOMIC</a></li>
-                            <li><a href="./subscribe.html">SUBSCRIBE</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/bangkokpost" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/bangkokpostnews" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/bangkokpost_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="main-area">
+            <div class="country-label">WORLD</div>
+            <div class="slide_wrapper">
+                <div class="slide_control">
+                    <button class="slide_to-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+                        </svg>
+                    </button>
+                    <button class="slide_to-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="slide_inner">
+                    <div class="recommend-storie_card">
+                        <div class="recommend-storie_image-wrapper">
+                            <iframe class="recommend-storie_image" scrolling="no" frameborder="0" allowfullscreen
+                                webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen"
+                                src="https://w3.mp.lura.live/player/prod/v3/anvload.html?key=eyJtIjoiTElOIiwidiI6Ijc1MzY0OTkiLCJhbnZhY2siOiJZNVZENkV5ZE05VjJERGlyWUtGMmhKZ2pwZVF2R1J3bCIsInNoYXJlTGluayI6Imh0dHBzOi8vd3d3LndhbmUuY29tL2RvbnQtbWlzcy93YXRjaC12b2x1bnRlZXJzLWhlbHAtdWtyYWluaWFuLXJlZnVnZWVzLWFuZC1wZXRzLXdpdGgtcGF3cy1vZi13YXIvIiwicGx1Z2lucyI6eyJjb21zY29yZSI6eyJjbGllbnRJZCI6IjYwMzY0MzkiLCJjMyI6IndhbmUuY29tIiwic2NyaXB0IjoiLy93My5tcC5sdXJhLmxpdmUvcGxheWVyL3Byb2QvdjMvcGx1Z2lucy9jb21zY29yZS9jb21zY29yZXBsdWdpbi5taW4uanMiLCJ1c2VEZXJpdmVkTWV0YWRhdGEiOnRydWUsIm1hcHBpbmciOnsidmlkZW8iOnsiYzMiOiJ3YW5lLmNvbSIsIm5zX3N0X3N0Ijoid2FuZSIsIm5zX3N0X3B1IjoiTmV4c3RhciIsIm5zX3N0X2dlIjoiTmV3cyxWaWRlbyIsImNzX3VjZnIiOiIifSwiYWQiOnsiYzMiOiJ3YW5lLmNvbSIsIm5zX3N0X3N0Ijoid2FuZSIsIm5zX3N0X3B1IjoiTmV4c3RhciIsIm5zX3N0X2dlIjoiTmV3cyxWaWRlbyIsImNzX3VjZnIiOiIifX19LCJkZnAiOnsiY2xpZW50U2lkZSI6eyJhZFRhZ1VybCI6Imh0dHBzOi8vcHViYWRzLmcuZG91YmxlY2xpY2submV0L2dhbXBhZC9hZHM%2Fc3o9MXgxMDAwJml1PS81Njc4L2xpbi53YW5lL2Rvbl90X21pc3MmaW1wbD1zJmdkZnBfcmVxPTEmZW52PXZwJm91dHB1dD12bWFwJnVudmlld2VkX3Bvc2l0aW9uX3N0YXJ0PTEmYWRfcnVsZT0xJmRlc2NyaXB0aW9uX3VybD1odHRwczovL3d3dy53YW5lLmNvbS9kb250LW1pc3Mvd2F0Y2gtdm9sdW50ZWVycy1oZWxwLXVrcmFpbmlhbi1yZWZ1Z2Vlcy1hbmQtcGV0cy13aXRoLXBhd3Mtb2Ytd2FyLyZ2Y29ucD0yJmN1c3RfcGFyYW1zPXZpZCUzRDc1MzY0OTklMjZjbXNpZCUzRDEwNjY5MDAlMjZwaWQlM0QxMDY2OTAwJTI2cGVyc19jaWQlM0RueHMtMjEtYXJ0aWNsZS0xMDY2OTAwJTI2dmlkY2F0JTNEJTJGZG9uX3RfbWlzcyUyNmJvYl9jayUzRCU1QmJvYl9ja192YWwlNUQlMjZkX2NvZGUlM0QxJTI2cGFnZXR5cGUlM0RzdG9yeSUyNnBsYXllcndpZHRoJTNENTE3LjMzMyUyNnBsYXllcmhlaWdodCUzRDI5MSUyNnVwaWQlM0RkOGUwYzM1MS03M2QxLTRhNDEtYmYyNi1lMmM2NGQ1ZjExYzMiLCJ2cGFpZE1vZGUiOiJlbmFibGVkIn0sInNlcnZlclNpZGUiOnsicGFsX25vbmNlIjoiQVF6ekJHUUVlYjMwN0RfR0NZakdKdXFDXzJfdDJRaExmdFF3dVBxQXZhaURJaDY4SnJka3A3OFc2dU9zS1EyMmRDNENZRWJtU1ZqTXRJZVRsYXBseHB1SzV4Zi10bnkwemFRWTlqMGtibnItT0tsV2dBUGFTVUVkT3pRcFlKRHFnT3d6T0JfV09UdmF5TlJLNDlwd1lMMmY1N2NURWgyNGd0b2hnYmFFR25pR2xoTTJndnhlU3lYaDlfbTFacV8yS1I0SG5iLTJJMDNPT1ZEem05eGZYMmZfbkRfTGFfeDN4b3pyYzlDMnN1eXpOSlRDLVpJZG1rLUFudmhwbUFDU2ZhUEM1NlEzOGllcDdWZm5VTDVidXFhU05Cb0tHSUNuYll2TTlKQnp0NHZXRlRDSS0wRlhpRmVnZm41YkhEWTNQanp1Zm9yb01lWFBvYjk4b1UtUVVpY2ZudUE0NWhZYmhmTGdmdkQ5YTlnUzJGTXJtZVdjRWJEakdTYUpSSGk0TEZwblNOVTVxRDF5aVAxU1FwZVNwazF5X09vUmNvRFkyTFRTN3hJWERoOU9sT1c2clhFUEZvMVp1QXZiUXBxcVVhMWxORHFOak0xWDdRSmVXUFJkQzJOYy1TWlFickRTZGUxODNBSGVtdHdZcEhYaEJFOXFpejhYVVUyY0VOMFZ5bjNfdGtMM0R0Nm10TE9xcGllMklDeWVlRE9JckxRZW9FTWI1S3B5aUZsSWVYdVpUOXpzdmNycUpZM0IyeGl4eVozMXU3ZW9sU0NmS3Fnem94b2dLZHY1YlFlZzh4ZFFaZHJtVHg2dlZtQ21tLTNqMFVmWWJhLTVPZklOclpyczBkVEZ3ZmdoRlFmOExaT3djWTdaQXN1amJ3ZHNPT2RDNXYxLU1pejR3VWhDMTV0dFlwWXlTSGwxU1NrWFJQZHdvQjN3SThWLTZNMHRieExXYzNsblZicnNoSDNFWUhJQmwyWi1lektmN0NzcTFBdUtUbzNGdjVFNTJTZGJIVjZxbFRFRk1yVjg2RHF0ZnFYUDBYN2JWZHU1TmNyQWFMQU1VTWRKSjdfSUEyZWVualZUT1BNUkJkb1MzUFB3aTVZV1R0b0MwMHRXWlF3Q0VHSG5keE9iVFEycmtPUlRMeFk2TFZFbVBkcFNXNGFUaVVjMFE3LW03dnozMS1kdlZZM25XS21iUmI5d1dnNFpUQW1tRV8yOHZxTE9sOU5NcUYtWmQ2elU1QkpaNFE0WHNZS0N3RURjYlFuNTFWb3ktZWJmMVNROFZINlpza2RvS3dKVHM3enRnbHI1aU4yZzZGXzl3V1JTMThvTV94ZFZLUFduWjFkaHZTaHB6WVBPSnpIN0ZJTGNLbUdzblBudzFfTlBVWE9PakR1TDFtVjZSLTdJOUJhUmpXZU80dWJKYUgyeU1WOWd5ZlZLeGgwbjkxa1hjQkc1S3h4TWFFM05WYW1CbkQtZV9PenJVbHBJVEExYUJ6R1pKUmxUZHJTRlpiZWxTREdBQ1haSjRBTEFVTWZWTjFuMjBhaTIyYkJzZDQwQzMxd3dzNUpJV1dmZlFBQ0NQWmZycHJpcnZIMklONlAzazlSQkFRckJ4STV4N3ZHX1FLSVBXcTIyeGFUVlpnR0RmZHRQSUEuLiJ9fSwibmllbHNlbiI6eyJhcGlkIjoiUEI2NzY4RDZFLTVBN0MtNDEyMi05NDc2LTQzNzk2MTI3QkI2MyIsInNmY29kZSI6ImRjciIsInR5cGUiOiJkY3IiLCJhcG4iOiJBbnZhdG8iLCJlbnZpcm9ubWVudCI6InByb2R1Y3Rpb24iLCJ1c2VEZXJpdmVkTWV0YWRhdGEiOnRydWUsIm1hcHBpbmciOnsiYWRsb2FkdHlwZSI6MiwiYWRNb2RlbCI6Mn0sIm9wdE91dCI6ZmFsc2V9LCJzZWdtZW50Q3VzdG9tIjp7InNjcmlwdCI6Imh0dHBzOi8vc2VnbWVudC5wc2cubmV4c3RhcmRpZ2l0YWwubmV0L2FudmF0by5qcyIsIndyaXRlS2V5IjoiUlVCZnZXWHVZenJ6YWtVbVloT0gyN3JjZGNTTjNIZlEiLCJwbHVnaW5zTG9hZGluZ1RpbWVvdXQiOjEyfSwiZ29vZ2xlQW5hbHl0aWNzIjp7InRyYWNraW5nSWQiOiJVQS0zMjUwNzM2OC0zOCIsImV2ZW50cyI6eyJBRF9TVEFSVEVEIjp7ImFsaWFzIjoiVmlkZW8tQWQiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fU1RBUlRFRCI6eyJhbGlhcyI6IlZpZGVvLVBsYXkiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fRklSU1RfUVVBUlRJTEUiOnsiYWxpYXMiOiJWaWRlby0yNSUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fTUlEX1BPSU5UIjp7ImFsaWFzIjoiVmlkZW8tNTAlIiwiY2F0ZWdvcnkiOiJWaWRlbyIsImxhYmVsIjoiW1tUSVRMRV1dIn0sIlZJREVPX1RISVJEX1FVQVJUSUxFIjp7ImFsaWFzIjoiVmlkZW8tNzUlIiwiY2F0ZWdvcnkiOiJWaWRlbyIsImxhYmVsIjoiW1tUSVRMRV1dIn0sIlZJREVPX0NPTVBMRVRFRCI6eyJhbGlhcyI6IlZpZGVvLTEwMCUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVVNFUl9QQVVTRSI6eyJhbGlhcyI6IlBhdXNlIiwiY2F0ZWdvcnkiOiJWaWRlbyIsImxhYmVsIjoiW1tUSVRMRV1dIn0sIlVTRVJfUkVTVU1FIjp7ImFsaWFzIjoiUmVzdW1lIiwiY2F0ZWdvcnkiOiJWaWRlbyIsImxhYmVsIjoiW1tUSVRMRV1dIn19fSwicGFsIjp7ImxpYnJhcnlSZXF1ZXN0ZWQiOnRydWUsInBJbnN0YW5jZSI6InA5MyJ9fSwiaHRtbDUiOnRydWUsInRva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjJhV1FpT2lJM05UTTJORGs1SWl3aWFYTnpJam9pV1RWV1JEWkZlV1JOT1ZZeVJFUnBjbGxMUmpKb1NtZHFjR1ZSZGtkU2Qyd2lMQ0psZUhBaU9qRTJORGM0T0RjeU9USjkuMm1sSzNTdTlmUTVEQnVydWVNbEtYYndzTEc3bU9PNWtsMmgtV3ZyQmo3TSJ9"></iframe>
                         </div>
+                        <div class="recommend-storie_content">
+                            <span class="recommend-storie_headline">WORLD</span>
+                            <h2 class="recommend-storie_title"> Dogs of war: Volunteers help Ukrainian refugees with
+                                pets
+                            </h2>
+                            <p class="recommend-storie_paragraph">Volunteers in the Romanian border town of Siret on
+                                Sunday (March 20) helped Ukrainian refugees fleeing the Russian invasion with their
+                                pets. - REUTERS </p>
+                        </div>
+                    </div>
+                    <div class="recommend-storie_card">
+                        <div class="recommend-storie_image-wrapper">
+                            <iframe class="recommend-storie_image" scrolling="no" frameborder="0" allowfullscreen
+                                webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen"
+                                src="https://w3.mp.lura.live/player/prod/v3/anvload.html?key=eyJtIjoiTElOIiwidiI6Ijc1MzA1MDkiLCJhbnZhY2siOiJZNVZENkV5ZE05VjJERGlyWUtGMmhKZ2pwZVF2R1J3bCIsInNoYXJlTGluayI6Imh0dHBzOi8vd3d3LndhbmUuY29tL3ZpZGVvL2hvcC1hbmQtc2Vlay83NTM3NTYxLyIsInBsdWdpbnMiOnsiY29tc2NvcmUiOnsiY2xpZW50SWQiOiI2MDM2NDM5IiwiYzMiOiJ3YW5lLmNvbSIsInNjcmlwdCI6Ii8vdzMubXAubHVyYS5saXZlL3BsYXllci9wcm9kL3YzL3BsdWdpbnMvY29tc2NvcmUvY29tc2NvcmVwbHVnaW4ubWluLmpzIiwidXNlRGVyaXZlZE1ldGFkYXRhIjp0cnVlLCJtYXBwaW5nIjp7InZpZGVvIjp7ImMzIjoid2FuZS5jb20iLCJuc19zdF9zdCI6IndhbmUiLCJuc19zdF9wdSI6Ik5leHN0YXIiLCJuc19zdF9nZSI6Ik5ld3MsVmlkZW8iLCJjc191Y2ZyIjoiIn0sImFkIjp7ImMzIjoid2FuZS5jb20iLCJuc19zdF9zdCI6IndhbmUiLCJuc19zdF9wdSI6Ik5leHN0YXIiLCJuc19zdF9nZSI6Ik5ld3MsVmlkZW8iLCJjc191Y2ZyIjoiIn19fSwiZGZwIjp7ImNsaWVudFNpZGUiOnsiYWRUYWdVcmwiOiJodHRwczovL3B1YmFkcy5nLmRvdWJsZWNsaWNrLm5ldC9nYW1wYWQvYWRzP3N6PTF4MTAwMCZpdT0vNTY3OC9saW4ud2FuZS92aWRlb19jZW50ZXImaW1wbD1zJmdkZnBfcmVxPTEmZW52PXZwJm91dHB1dD12bWFwJnVudmlld2VkX3Bvc2l0aW9uX3N0YXJ0PTEmYWRfcnVsZT0xJmRlc2NyaXB0aW9uX3VybD1odHRwczovL3d3dy53YW5lLmNvbS92aWRlby8mcHBpZD01MjIxYjhjZC0zNTlkLTQ5NTQtYTM4MC1mMDc4YzAwOWQ5OWQmY3VzdF9wYXJhbXM9dmlkJTNENzUzMDUwOSUyNnBlcnNfY2lkJTNEbnhzLTIxLXZpZGVvLTAlMjZ2aWRjYXQlM0QlMkZ2aWRlb19jZW50ZXIlMjZib2JfY2slM0QlNUJib2JfY2tfdmFsJTVEJTI2ZF9jb2RlJTNEMSUyNnBhZ2V0eXBlJTNEbm9uZSUyNnBsYXllcndpZHRoJTNEMTA4MCUyNnBsYXllcmhlaWdodCUzRDYwOCUyNnVwaWQlM0Q3MDBiOTRhMS1jODIzLTRkY2EtYmE5MS00ZDhjOWUxYzNhZjAlMjZwZXJtdXRpdmUlM0Q4NTIwMCUyQzk0MjU3JTJDOTQyNTklMkM5NDI2MCIsInZwYWlkTW9kZSI6ImVuYWJsZWQifSwic2VydmVyU2lkZSI6eyJwYWxfbm9uY2UiOiJBUXp6QkdRRVdhTW5UUEtaU0p3eWoxVVNzNnNIQ2ktc0tVVGRKSGxNSVlXSlBKQXNUVFdmT1B4UzBWMFJwU0FyeGNYV3h0dUNQQlpycjVWUm1oWHZrb1pTUlhHTWZDVWU5b25GRXNLMWJibFpjQVFyalBBMVM2c2RhXy1PWnZUYzlFT2JXOHY1QUZ5TUFNVFFkS1o5OXp5NU9jSjdOeU0yT2xGX2REV3hhNDBKSWkxdk5MZW1ocy1neFZ4STAwX3BHdVhydnd1SEh6RjhpSE15N1ZkeVBWUm9BbUtGNzVxeU93dVMyUTRYRGgxNlJKZUJCT0NlV1kwbXBYLWw5SVJvWmtsV2tOb1JwRXVYOU5wbU9xa2ZTSGlzRWpvRlVFZkZQSm1EM3VpWlU1dVJxanpzMW84QzFSXzZTOVpJd01ZV0d3UllnaUQ0NWZTWWl5WEd0d1pQdWpwMVlYT1ZmSjN5R0paTzJiTmNRRUV2Yklib3RUTTJuSlU4WjMzcVRnZUNZbDFYZ2Q0ZlR2MlVoTUF1M3hOTDdWMHBhYm1KM2k0c29fc0hLRFptVUl0ODdGNlh1bk5SVGl3S1BkdWRibWRwX25ndjZiblpsbEQxSjVCdk5NOGpYN3d5b3htbzhnSGpFUnNxSjFHY1FkUDFxRlUxd3VLa3FrUUczR0ttb1RDNG5SaE9NWnVSaE9rSVJsNTFWVWRuOHpyVXE3dGFGMWtkVENyNVBGWktRUzg2MGxuN19KWkxiME00d0g1XzQ3VXpXTFZJb1EwM21FLUhORDN1SlptbXF5bkVuV3V6VHAwNUlzOTFCX0h0aFc4TlU1SjI2cmhaRWdUVTA0T3ZIYVNmSTVhUGNlTDNaa0wwcDVSOVVuRFhYQkVxdFJBdFRNZm4zbTZ5REhuVUNQd1JubkFyRG5fbjUtcy0xM19JeEw2LWh0Sm51UnV2R25GWDBYaEFfYnc0cks0c2FnQm9oNmJaTy1aQ2l1WVlyN0JOY0tiVEtuSUZpZ0VxUDFEYVpQNWswbmp6Z0YwU3NfTWNFTzgxV1hKcnloUWtmaks0WFBOVmQ4R3hVVng5dl9zYWwtM2JXbWFKcm9qZUNiVzRkWUFWV0RMa0p6SkxRendxeUZUUzNETk9udlBYLUhSaE5IWlhrWVAzd3B0cFc4UkVfMFlBTDFyVTJrdTAwRl9qd3ZLZEM2QTViM0RCc2RLcXRUVWpFQzF2NldNYURCNy1Gb0pvMWtTLUw3eWxGbVU4NWk2VWlxclI3WE9lVllhNDdEdkgxemhTM1lxWFVqSTM5RmFQelZHdFBCZnhNZVplWC00SnJWTkZDX2JLa2dtMTN0TFVSS1RGbUQ1TzZYMHNsZVJINzFxOGJWU1dpVU9yU2t6alVUXzQxV05fN1BXSzRfVTZuX3hWM1QwS1FfczFoRGg1dmVXWHl2b1BkcVR2RjEyRjZHZnBZSmVzR0JnTGVDSGhrMUh6S1R1ZUZqV0V3YmRtZ3pvMmV1MjhBZW50SFV6UEJVdW5xTTFydk42dXd3dFBDTFRnamlhQUlpOUQ3Y09JQVFrLiJ9fSwibmllbHNlbiI6eyJhcGlkIjoiUEI2NzY4RDZFLTVBN0MtNDEyMi05NDc2LTQzNzk2MTI3QkI2MyIsInNmY29kZSI6ImRjciIsInR5cGUiOiJkY3IiLCJhcG4iOiJBbnZhdG8iLCJlbnZpcm9ubWVudCI6InByb2R1Y3Rpb24iLCJ1c2VEZXJpdmVkTWV0YWRhdGEiOnRydWUsIm1hcHBpbmciOnsiYWRsb2FkdHlwZSI6MiwiYWRNb2RlbCI6Mn0sIm9wdE91dCI6ZmFsc2V9LCJzZWdtZW50Q3VzdG9tIjp7InNjcmlwdCI6Imh0dHBzOi8vc2VnbWVudC5wc2cubmV4c3RhcmRpZ2l0YWwubmV0L2FudmF0by5qcyIsIndyaXRlS2V5IjoiUlVCZnZXWHVZenJ6YWtVbVloT0gyN3JjZGNTTjNIZlEiLCJwbHVnaW5zTG9hZGluZ1RpbWVvdXQiOjEyfSwiZ29vZ2xlQW5hbHl0aWNzIjp7InRyYWNraW5nSWQiOiJVQS0zMjUwNzM2OC0zOCIsImV2ZW50cyI6eyJBRF9TVEFSVEVEIjp7ImFsaWFzIjoiVmlkZW8tQWQiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fU1RBUlRFRCI6eyJhbGlhcyI6IlZpZGVvLVBsYXkiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fRklSU1RfUVVBUlRJTEUiOnsiYWxpYXMiOiJWaWRlby0yNSUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fTUlEX1BPSU5UIjp7ImFsaWFzIjoiVmlkZW8tNTAlIiwiY2F0ZWdvcnkiOiJWaWRlbyIsImxhYmVsIjoiW1tUSVRMRV1dIn0sIlZJREVPX1RISVJEX1FVQVJUSUxFIjp7ImFsaWFzIjoiVmlkZW8tNzUlIiwiY2F0ZWdvcnkiOiJWaWRlbyIsImxhYmVsIjoiW1tUSVRMRV1dIn0sIlZJREVPX0NPTVBMRVRFRCI6eyJhbGlhcyI6IlZpZGVvLTEwMCUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVVNFUl9QQVVTRSI6eyJhbGlhcyI6IlBhdXNlIiwiY2F0ZWdvcnkiOiJWaWRlbyIsImxhYmVsIjoiW1tUSVRMRV1dIn0sIlVTRVJfUkVTVU1FIjp7ImFsaWFzIjoiUmVzdW1lIiwiY2F0ZWdvcnkiOiJWaWRlbyIsImxhYmVsIjoiW1tUSVRMRV1dIn19fSwicGFsIjp7InBwaWQiOiI1MjIxYjhjZC0zNTlkLTQ5NTQtYTM4MC1mMDc4YzAwOWQ5OWQiLCJkZXNjcmlwdGlvblVybCI6Imh0dHBzJTNBJTJGJTJGd3d3LndhbmUuY29tJTJGdmlkZW8lMkZob3AtYW5kLXNlZWslMkY3NTM3NTYxJTJGIiwibGlicmFyeVJlcXVlc3RlZCI6dHJ1ZSwicEluc3RhbmNlIjoicGxheWVyLTg3MjgifX0sImh0bWw1Ijp0cnVlLCJ0b2tlbiI6ImV5SjBlWEFpT2lKS1YxUWlMQ0poYkdjaU9pSklVekkxTmlKOS5leUoyYVdRaU9qYzFNekExTURrc0ltbHpjeUk2SWxrMVZrUTJSWGxrVFRsV01rUkVhWEpaUzBZeWFFcG5hbkJsVVhaSFVuZHNJaXdpWlhod0lqb3hOalEzT0RnM05qazJmUS55UzlWX2xWZGsycHZLNEFNXzIwbWxxMmhfNXd3WDM4Q1RrSllSSXhHZTdFIn0%3D"></iframe>
+                        </div>
+                        <div class="recommend-storie_content">
+                            <span class="recommend-storie_headline">WORLD</span>
+                            <h2 class="recommend-storie_title">Animals enjoy St. Patrick's Day treats
+                            </h2>
+                            <p class="recommend-storie_paragraph">Cras condimentum tortor eu risus blandit faucibus.
+                                Maecenas
+                                placerat elementum metus volutpat congue. Vivamus sed maximus tellus. Praesent euismod
+                                malesuada lectus, at volutpat odio venenatis tempus.</p>
+                        </div>
+                    </div>
+                    <div class="recommend-storie_card">
+                        <div class="recommend-storie_image-wrapper">
+                            <iframe class="recommend-storie_image" scrolling="no" frameborder="0" allowfullscreen
+                                webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen"
+                                src="https://w3.mp.lura.live/player/prod/v3/anvload.html?key=eyJtIjoiTElOIiwidiI6Ijc1MDIzMTAiLCJhbnZhY2siOiJZNVZENkV5ZE05VjJERGlyWUtGMmhKZ2pwZVF2R1J3bCIsInNoYXJlTGluayI6Imh0dHBzOi8vd3d3LndhbmUuY29tL3ZpZGVvL2FuaW1hbHMtZW5qb3ktc3QtcGF0cmlja3MtZGF5LXRyZWF0cy83NTMwNTA5LyIsInBsdWdpbnMiOnsiY29tc2NvcmUiOnsiY2xpZW50SWQiOiI2MDM2NDM5IiwiYzMiOiJ3YW5lLmNvbSIsInNjcmlwdCI6Ii8vdzMubXAubHVyYS5saXZlL3BsYXllci9wcm9kL3YzL3BsdWdpbnMvY29tc2NvcmUvY29tc2NvcmVwbHVnaW4ubWluLmpzIiwidXNlRGVyaXZlZE1ldGFkYXRhIjp0cnVlLCJtYXBwaW5nIjp7InZpZGVvIjp7ImMzIjoid2FuZS5jb20iLCJuc19zdF9zdCI6IndhbmUiLCJuc19zdF9wdSI6Ik5leHN0YXIiLCJuc19zdF9nZSI6Ik5ld3MsVmlkZW8iLCJjc191Y2ZyIjoiIn0sImFkIjp7ImMzIjoid2FuZS5jb20iLCJuc19zdF9zdCI6IndhbmUiLCJuc19zdF9wdSI6Ik5leHN0YXIiLCJuc19zdF9nZSI6Ik5ld3MsVmlkZW8iLCJjc191Y2ZyIjoiIn19fSwiZGZwIjp7ImNsaWVudFNpZGUiOnsiYWRUYWdVcmwiOiJodHRwczovL3B1YmFkcy5nLmRvdWJsZWNsaWNrLm5ldC9nYW1wYWQvYWRzP3N6PTF4MTAwMCZpdT0vNTY3OC9saW4ud2FuZS92aWRlb19jZW50ZXImaW1wbD1zJmdkZnBfcmVxPTEmZW52PXZwJm91dHB1dD12bWFwJnVudmlld2VkX3Bvc2l0aW9uX3N0YXJ0PTEmYWRfcnVsZT0xJmRlc2NyaXB0aW9uX3VybD1odHRwczovL3d3dy53YW5lLmNvbS92aWRlby8mcHBpZD01MjIxYjhjZC0zNTlkLTQ5NTQtYTM4MC1mMDc4YzAwOWQ5OWQmY3VzdF9wYXJhbXM9dmlkJTNENzUwMjMxMCUyNnBlcnNfY2lkJTNEbnhzLTIxLXZpZGVvLTAlMjZ2aWRjYXQlM0QlMkZ2aWRlb19jZW50ZXIlMjZib2JfY2slM0QlNUJib2JfY2tfdmFsJTVEJTI2ZF9jb2RlJTNEMjc4JTJDMjcxJTJDMjU2JTJDMjc4JTJDMjcxJTJDMjU2JTI2cGFnZXR5cGUlM0Rub25lJTI2cGxheWVyd2lkdGglM0QxMDgwJTI2cGxheWVyaGVpZ2h0JTNENjA4JTI2dXBpZCUzRDcwMGI5NGExLWM4MjMtNGRjYS1iYTkxLTRkOGM5ZTFjM2FmMCUyNnBlcm11dGl2ZSUzRDg1MjAwJTJDOTQyNTclMkM5NDI1OSUyQzk0MjYwIiwidnBhaWRNb2RlIjoiZW5hYmxlZCJ9LCJzZXJ2ZXJTaWRlIjp7InBhbF9ub25jZSI6IkFRenpCR1FFZnRpQ0x0WWR4MV9nV0EyNUk4MDQ0X0pJVW50RGxETFpoZnBxbjhzeEx0Wl9sUko4Y3dGY1d4UTVpdkszLVZVTFBHclg3dFNXM3IzZnF6MjdCajh1ZURpZE5Fek1sRTBtdHJXNHVpbVlvQS11eUx3LV9KYTVWU2hrTzkwVmFWeEZpemg5bkgwREZjOHJzR2JrZzZ0WWYzWkhOSjlTQjZMeV9jeG0yaWNrbXNFem1DQ1E5RG1DU1pKNm5Ya0tzbUg0dHRPNWFVcENGcUwyZ21yelJENGFmTTRjeDJTanhMVFlQY0F5d2xLVTJHUmRzSmhFdXQ3VU40M2ZwV2RCc3BsREF4ZWx5WXE2RmdIb1UycVNiSUxGeGI3aVp0MjdpZXdzTnV5SmxGNnREU0hYNzM2cVhxQUVSeWhCaUZXUjZRTnAzS1pIWU5zRFpwRjY4TGJCTFo3WkJhNVBqRk4zdkFvUVRkMjJPaEJRUWFFbllJcEhUcm1JTjhkNk5mQTQ4MGlUYm92RWlyeUtUUFNucTBwY0t1XzlKa24xWlBib2NmVEpOVmFjQTE0bXFieWxJSTNjcXJNeENhOUp2QU1oSklSZUlVZC0xcFh5bzBRRTlMQktVb00zbEdGbW03aUhnZENBQzVmWmdQNW5VQ1BVeXZFYk9CQ0hsWG8zTkRiNWFGLXZDamxfTjV3ZXVacnp2NjdUMDE3dE51VVc4VG5TVHB6RWdTSUFqTWl1eEJxbllfMkpwUWE2MVk3NGFsZEVZOGsyZUVGYTV4ekZVOXFIREhLSlpzZENkUlh5SzNJbHctRzNsTzlLQzQ4TWtwUUJkVEFCOWZhVjQxbXZtbko4WkpiZ2tjeE4tV0JjcVdQVHNqZ2E0WjVtSFp0QVRYNEJndmgtdWdfUncwaXVrekF3dFYzcG5hMzZEYVF1cFNEcFFSVWg5cTFaS2ZCUk5uMDg4cGFaX3ZTbFVxNFB4N2xSV3E3dFRaUEQ1ZkFoOEJ0ZEhTa3JnSmUtTDl5QWh6VEotY2IyRGp0U1M0ZnpnQUJDVHpXZXNSSUEzVXFpMDZFcGV2WkFsLWZKc2FtcXk2aWhHVV8wNTFtcXIwUm53TzRGT1VmNHRSdGp1UkFPSDQ0UmlHa0sxYWRPTFBoSlpOWTY1Q0g4S1N3LXphWnpmMEUtWlp5eWYwVkJwUTd3OC1SZXhUcU5qb3ZDdDQ5U2xUTnByZkI5cDFadUxMdk1KUmt0M25yNlpzcGZnUnFXWmludGEwLTBKcmxoelhHS2o4OFVFSGE5UzV6TU1Qb2hQZldSSnlkOFVubFJtbndQM21QMGNOUi0xS3lQbEF5NkdadmMzQzNNYmdFdUd2SjhTYlpUWU51Mkw1dVp4TS12b0NtbTZ6MTAwdzdhbENIRFVLc2ppQlB5UHhWcXlKU1VRXzV6TU5XUEYzdnQyV2ZHRi14cnk4Z1RCdjN6MEpURVg2R0JHMFptZXpyd3VrcVpsaGhPY3V2S1UzQ2dHNnNFMHRKQlpvd0kyR080UjdqcGVnUDZkN1VSYWRUNUxqaU5XQjFkUXVNYXJUZ3A1Q2VEdHJsZndQRVJYR1E1OWxtQUdvYkdLQlFMWk52QVRUTjJRMUQ5QUNjNTdtS0FLT2NMWlZOUFJrTUxXekxzbkhfTXotWGlxU2VRTmRuaU5BR1gyZy4uIn19LCJuaWVsc2VuIjp7ImFwaWQiOiJQQjY3NjhENkUtNUE3Qy00MTIyLTk0NzYtNDM3OTYxMjdCQjYzIiwic2Zjb2RlIjoiZGNyIiwidHlwZSI6ImRjciIsImFwbiI6IkFudmF0byIsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsInVzZURlcml2ZWRNZXRhZGF0YSI6dHJ1ZSwibWFwcGluZyI6eyJhZGxvYWR0eXBlIjoyLCJhZE1vZGVsIjoyfSwib3B0T3V0IjpmYWxzZX0sInNlZ21lbnRDdXN0b20iOnsic2NyaXB0IjoiaHR0cHM6Ly9zZWdtZW50LnBzZy5uZXhzdGFyZGlnaXRhbC5uZXQvYW52YXRvLmpzIiwid3JpdGVLZXkiOiJSVUJmdldYdVl6cnpha1VtWWhPSDI3cmNkY1NOM0hmUSIsInBsdWdpbnNMb2FkaW5nVGltZW91dCI6MTJ9LCJnb29nbGVBbmFseXRpY3MiOnsidHJhY2tpbmdJZCI6IlVBLTMyNTA3MzY4LTM4IiwiZXZlbnRzIjp7IkFEX1NUQVJURUQiOnsiYWxpYXMiOiJWaWRlby1BZCIsImNhdGVnb3J5IjoiVmlkZW8iLCJsYWJlbCI6IltbVElUTEVdXSJ9LCJWSURFT19TVEFSVEVEIjp7ImFsaWFzIjoiVmlkZW8tUGxheSIsImNhdGVnb3J5IjoiVmlkZW8iLCJsYWJlbCI6IltbVElUTEVdXSJ9LCJWSURFT19GSVJTVF9RVUFSVElMRSI6eyJhbGlhcyI6IlZpZGVvLTI1JSIsImNhdGVnb3J5IjoiVmlkZW8iLCJsYWJlbCI6IltbVElUTEVdXSJ9LCJWSURFT19NSURfUE9JTlQiOnsiYWxpYXMiOiJWaWRlby01MCUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fVEhJUkRfUVVBUlRJTEUiOnsiYWxpYXMiOiJWaWRlby03NSUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fQ09NUExFVEVEIjp7ImFsaWFzIjoiVmlkZW8tMTAwJSIsImNhdGVnb3J5IjoiVmlkZW8iLCJsYWJlbCI6IltbVElUTEVdXSJ9LCJVU0VSX1BBVVNFIjp7ImFsaWFzIjoiUGF1c2UiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVVNFUl9SRVNVTUUiOnsiYWxpYXMiOiJSZXN1bWUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifX19LCJwYWwiOnsicHBpZCI6IjUyMjFiOGNkLTM1OWQtNDk1NC1hMzgwLWYwNzhjMDA5ZDk5ZCIsImRlc2NyaXB0aW9uVXJsIjoiaHR0cHMlM0ElMkYlMkZ3d3cud2FuZS5jb20lMkZ2aWRlbyUyRmFuaW1hbHMtZW5qb3ktc3QtcGF0cmlja3MtZGF5LXRyZWF0cyUyRjc1MzA1MDklMkYiLCJsaWJyYXJ5UmVxdWVzdGVkIjp0cnVlLCJwSW5zdGFuY2UiOiJwbGF5ZXItODcyOCJ9fSwiaHRtbDUiOnRydWUsInRva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjJhV1FpT2pjMU1ESXpNVEFzSW1semN5STZJbGsxVmtRMlJYbGtUVGxXTWtSRWFYSlpTMFl5YUVwbmFuQmxVWFpIVW5kc0lpd2laWGh3SWpveE5qUTNPRGczTmprMmZRLjllay0zdDZUMXhOTndGbHdSNWFyczljUDM1S0ZMeF91bmJaRTBQa3ZfUXcifQ%3D%3D"></iframe>
+                        </div>
+                        <div class="recommend-storie_content">
+                            <span class="recommend-storie_headline">WORLD</span>
+                            <h2 class="recommend-storie_title">Dog rescued from floating piece of ice on river in
+                                Michigan
+                            </h2>
+                            <p class="recommend-storie_paragraph">DOG RESCUE: First responders saved this dog who was
+                                trapped on a piece of ice on the Detroit River in Wyandotte, Michigan. On February 28,
+                                the rescue team was able to pull the ice toward the shore, grab the labradoodle, and use
+                                a ladder to get the dog up to safety. Police said the dog got checked out at a vet and
+                                is OK.</p>
+                        </div>
+                    </div>
+                    <div class="recommend-storie_card">
+                        <div class="recommend-storie_image-wrapper">
+                            <iframe class="recommend-storie_image" scrolling="no" frameborder="0" allowfullscreen
+                                webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen"
+                                src="https://w3.mp.lura.live/player/prod/v3/anvload.html?key=eyJtIjoiTElOIiwidiI6Ijc1MzM5MDQiLCJhbnZhY2siOiJZNVZENkV5ZE05VjJERGlyWUtGMmhKZ2pwZVF2R1J3bCIsInNoYXJlTGluayI6Imh0dHBzOi8vd3d3LndhbmUuY29tL3ZpZGVvLzMtZm9ydC13YXluZS1zdXNwZWN0cy1hcnJlc3RlZC83NTM2NDI0LyIsInBsdWdpbnMiOnsiY29tc2NvcmUiOnsiY2xpZW50SWQiOiI2MDM2NDM5IiwiYzMiOiJ3YW5lLmNvbSIsInNjcmlwdCI6Ii8vdzMubXAubHVyYS5saXZlL3BsYXllci9wcm9kL3YzL3BsdWdpbnMvY29tc2NvcmUvY29tc2NvcmVwbHVnaW4ubWluLmpzIiwidXNlRGVyaXZlZE1ldGFkYXRhIjp0cnVlLCJtYXBwaW5nIjp7InZpZGVvIjp7ImMzIjoid2FuZS5jb20iLCJuc19zdF9zdCI6IndhbmUiLCJuc19zdF9wdSI6Ik5leHN0YXIiLCJuc19zdF9nZSI6Ik5ld3MiLCJjc191Y2ZyIjoiIn0sImFkIjp7ImMzIjoid2FuZS5jb20iLCJuc19zdF9zdCI6IndhbmUiLCJuc19zdF9wdSI6Ik5leHN0YXIiLCJuc19zdF9nZSI6Ik5ld3MiLCJjc191Y2ZyIjoiIn19fSwiZGZwIjp7ImNsaWVudFNpZGUiOnsiYWRUYWdVcmwiOiJodHRwczovL3B1YmFkcy5nLmRvdWJsZWNsaWNrLm5ldC9nYW1wYWQvYWRzP3N6PTF4MTAwMCZpdT0vNTY3OC9saW4ud2FuZS92aWRlb19jZW50ZXImaW1wbD1zJmdkZnBfcmVxPTEmZW52PXZwJm91dHB1dD12bWFwJnVudmlld2VkX3Bvc2l0aW9uX3N0YXJ0PTEmYWRfcnVsZT0xJmRlc2NyaXB0aW9uX3VybD1odHRwczovL3d3dy53YW5lLmNvbS92aWRlby8mcHBpZD01MjIxYjhjZC0zNTlkLTQ5NTQtYTM4MC1mMDc4YzAwOWQ5OWQmY3VzdF9wYXJhbXM9dmlkJTNENzUzMzkwNCUyNnBlcnNfY2lkJTNEbnhzLTIxLXZpZGVvLTAlMjZ2aWRjYXQlM0QlMkZ2aWRlb19jZW50ZXIlMjZib2JfY2slM0QlNUJib2JfY2tfdmFsJTVEJTI2ZF9jb2RlJTNEMjYzJTJDMjYzJTJDMjg0JTJDMjQ1JTJDMjcxJTJDMjczJTJDMjgxJTJDMTc2JTJDMjgzJTJDMjU2JTJDMjU3JTJDMjg2JTJDMjU3JTJDMjQ1JTJDMjcxJTJDMjYwJTJDMjczJTJDMjgxJTJDMTc2JTJDMjgzJTJDMjgyJTJDMjU2JTJDMjg0JTJDMjg3JTJDMjg2JTI2cGFnZXR5cGUlM0Rub25lJTI2cGxheWVyd2lkdGglM0QxMDgwJTI2cGxheWVyaGVpZ2h0JTNENjA4JTI2dXBpZCUzRDcwMGI5NGExLWM4MjMtNGRjYS1iYTkxLTRkOGM5ZTFjM2FmMCUyNnBlcm11dGl2ZSUzRDg1MjAwJTJDOTQyNTclMkM5NDI1OSUyQzk0MjYwIiwidnBhaWRNb2RlIjoiZW5hYmxlZCJ9LCJzZXJ2ZXJTaWRlIjp7InBhbF9ub25jZSI6IkFRenpCR1FFRGdKMk1IZkdRck5rbnRNSnhhMV9mQ1B1bUktYWRnTnBtV1Y1VF9DX0t5QjNSQ3VUaFI1b0tMdnRPV1pxTk5VdE5WUFVJM0xkXzVWVzZtN1lqVW53bEo2eTdTUU5BVkhvZjhaeGlJRlplZ3ZMOGFVLWQzRDVuT3RMMTE4dktHNm8tTWI1RjZqcUZIeDQyVld5ZkYzc21fT0R6V2VIOG5QLS1NZ2pfZ0d4dHFORVpIUy14blJVNUlkVHZWUXo1ZkN2VDFqMDRmQVhoWnYwbVgwNW1xOXY4bUVvUlE0OG5kUG1HNXQ5UGthcFA5SFdrTGpnaXYxUFF2S3Y2T1VibUhHNnkyOXd4bDdObmwycjJTdmdIbnFBbnhSTnoyaE5FYXlDLTFOb2FJcFZCUEl6bnM3bHA2bnRGZEVKdUZqcHZvZ2pWS2NyWW1yNGFOWWFhbGFRdllUdmM0ZWhiSFdWWGlUV3VOYmt2elEwYllsSEZTQVBNa1I3WUFCT19KaF9WY2F3aXNocm5WWDkwYUR6TFNPMVoxMnJPTG5oeG5GUFFhZ1NTNlJJSHVMYlVIc2RhdTJwX2ExeGw5cEQ3OFRVamZJekxjQmttR1poTERDU3NQaTFZZl9MM004eW9Bc09pZEJpRjFFQndOQURoYmRIOE9RSmJ6b0JORmdqWEZWRy1idE1zekRma2twRjRkdnlIV1JRS0hNcU1vd3lKSnhhbm5qdnkzTDctX1FENmxCTXhmYWxmaE82cGZ4NVBKNHAtSmZPSTBjMDQzYzhXMThGRGViZW11VDI0QU04WTRUblgwdVcyazFlT3lGYkJKcTRFMWF4cHNUWjYxeU1hc1ZLUld5SGdISU8yMmRrS3NhNVR1VlVPMlczUTBoenVEUTk1em1jU3BWaktVUE1QT1dJb0RDS0dRdnpwUi1sZE5lNWRCemhfWEpuSFRwZVZ3SlpvaklnSVF5cDQ3MEd2ci1MSWlNN2R3aVRjTElCSjJRMEtNTnZqT3FOZjNMdktrdENyWHdrNTFMb2dPQkhCZV8yWm9KM2dTdFNzenVNQXVVQmhUb281cEdwVmpJWXdQUHV3T3dJS3d5SXdlSk1tczZrVTdUWjRuOXNPbF9MRzJRV0xyZ29XQjJnMlFjdXBsVzVUdTJmQzg5WkUxbFY2cjVTNDlkTmp1SFlOdzRvcXdjTlVOeUppN0owSXh5RDJrUmNYNmZEOHNFMHpVdHdPbU9uNVNIOFY0YWF5Ty1PX2Y2ajBZMzNZMGJiSHg5NlJxY1c5Qlh2M0FkNFBSc2kyY2pUbWFNZEhNUHJmT3R1clJMTnEtWHFwdUVhLVFVd09NQW02UFlaWVlsVmlHb3hkMTZyWXFBU1BXOWExX0JKLUo1OHVCUVI1WElSVEx3WlhvQV9OV3l3ZUhRQndSRGVnQ2xseXN4LUtYNkNjandKa18zOEJWbWZyMlVhQXJORWozX1dKWXM5UVhLQUNEdTB6YVVralRlX1drbm5Na1RHdjlaeW4wSjFKV2RSUlJFUE8tRWxQb28tQTZRZmE4bndlWUJadS1ZRXRKYzFMRHpaenJycjZETVlNaS1lVVNUWWIyUk5XbjB3NDdkaTVMbVRMajdDZ2loWmlzX2d2eVAwIn19LCJuaWVsc2VuIjp7ImFwaWQiOiJQQjY3NjhENkUtNUE3Qy00MTIyLTk0NzYtNDM3OTYxMjdCQjYzIiwic2Zjb2RlIjoiZGNyIiwidHlwZSI6ImRjciIsImFwbiI6IkFudmF0byIsImVudmlyb25tZW50IjoicHJvZHVjdGlvbiIsInVzZURlcml2ZWRNZXRhZGF0YSI6dHJ1ZSwibWFwcGluZyI6eyJhZGxvYWR0eXBlIjoyLCJhZE1vZGVsIjoyfSwib3B0T3V0IjpmYWxzZX0sInNlZ21lbnRDdXN0b20iOnsic2NyaXB0IjoiaHR0cHM6Ly9zZWdtZW50LnBzZy5uZXhzdGFyZGlnaXRhbC5uZXQvYW52YXRvLmpzIiwid3JpdGVLZXkiOiJSVUJmdldYdVl6cnpha1VtWWhPSDI3cmNkY1NOM0hmUSIsInBsdWdpbnNMb2FkaW5nVGltZW91dCI6MTJ9LCJnb29nbGVBbmFseXRpY3MiOnsidHJhY2tpbmdJZCI6IlVBLTMyNTA3MzY4LTM4IiwiZXZlbnRzIjp7IkFEX1NUQVJURUQiOnsiYWxpYXMiOiJWaWRlby1BZCIsImNhdGVnb3J5IjoiVmlkZW8iLCJsYWJlbCI6IltbVElUTEVdXSJ9LCJWSURFT19TVEFSVEVEIjp7ImFsaWFzIjoiVmlkZW8tUGxheSIsImNhdGVnb3J5IjoiVmlkZW8iLCJsYWJlbCI6IltbVElUTEVdXSJ9LCJWSURFT19GSVJTVF9RVUFSVElMRSI6eyJhbGlhcyI6IlZpZGVvLTI1JSIsImNhdGVnb3J5IjoiVmlkZW8iLCJsYWJlbCI6IltbVElUTEVdXSJ9LCJWSURFT19NSURfUE9JTlQiOnsiYWxpYXMiOiJWaWRlby01MCUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fVEhJUkRfUVVBUlRJTEUiOnsiYWxpYXMiOiJWaWRlby03NSUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVklERU9fQ09NUExFVEVEIjp7ImFsaWFzIjoiVmlkZW8tMTAwJSIsImNhdGVnb3J5IjoiVmlkZW8iLCJsYWJlbCI6IltbVElUTEVdXSJ9LCJVU0VSX1BBVVNFIjp7ImFsaWFzIjoiUGF1c2UiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifSwiVVNFUl9SRVNVTUUiOnsiYWxpYXMiOiJSZXN1bWUiLCJjYXRlZ29yeSI6IlZpZGVvIiwibGFiZWwiOiJbW1RJVExFXV0ifX19LCJwYWwiOnsicHBpZCI6IjUyMjFiOGNkLTM1OWQtNDk1NC1hMzgwLWYwNzhjMDA5ZDk5ZCIsImRlc2NyaXB0aW9uVXJsIjoiaHR0cHMlM0ElMkYlMkZ3d3cud2FuZS5jb20lMkZ2aWRlbyUyRjMtZm9ydC13YXluZS1zdXNwZWN0cy1hcnJlc3RlZCUyRjc1MzY0MjQlMkYiLCJsaWJyYXJ5UmVxdWVzdGVkIjp0cnVlLCJwSW5zdGFuY2UiOiJwbGF5ZXItODcyOCJ9fSwiaHRtbDUiOnRydWUsInRva2VuIjoiZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjJhV1FpT2pjMU16TTVNRFFzSW1semN5STZJbGsxVmtRMlJYbGtUVGxXTWtSRWFYSlpTMFl5YUVwbmFuQmxVWFpIVW5kc0lpd2laWGh3SWpveE5qUTNPRGczTmprMmZRLi1hUkdiUllYYkhSZmNDdnBiWW5DUmVQQko3cWR5b0EteDI1LVM3blRnOWcifQ%3D%3D"
+                                width="640" height="360"></iframe>
+                        </div>
+                        <div class="recommend-storie_content">
+                            <span class="recommend-storie_headline">WORLD</span>
+                            <h2 class="recommend-storie_title">
+                                Baby finally goes home after 460-day stay in NICU
+                            </h2>
+                            <p class="recommend-storie_paragraph">Baby Kendall Jurnakins was finally able to go home
+                                Thursday after being in the NICU at Ascension St. Vincent Hospital for a total of 460
+                                days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-storie_wrapper">
+                <div class="last-storie_header">
+                    <p class="last-storie_label">Lastest</p>
+                </div>
+                <ul class="last-storie_orders">
+                    <li class="last-storie_list">
+                        <div class="last-storie_time">10:13</div>
+                        <div class="last-storie_content">
+                            <span class="last-storie_headline">WORLD</span>
+                            <h2 class="last-storie_title">Plane carrying 132 crashes in China, Xi orders probe</h2>
+                            <p class="last-storie_paragraph">BEIJING: A China Eastern passenger jet carrying 132 people
+                                crashed onto a mountainside in southern China on Monday causing a large fire, shortly
+                                after losing contact with air traffic control and dropping thousands of metres in just
+                                three minutes. </p>
+                        </div>
+                        <div class="last-storie_image-wrapper">
+                            <img src="/media/news-photo/16.jpg" class="last-storie_image" alt="PHOTO" />
+                        </div>
+                    </li>
+                    <li class="last-storie_list">
+                        <div class="last-storie_time">14:20</div>
+                        <div class="last-storie_content">
+                            <span class="last-storie_headline">WORLD</span>
+                            <h2 class="last-storie_title">Children's hospital in Kyiv faces 'terrible' trauma of war
+                            </h2>
+                            <p class="last-storie_paragraph">KYIV: The horrors of the war in Ukraine can be seen in
+                                13-year-old Volodymyr's empty expression as he lies in the Okhmatdyt children's hospital
+                                in Kyiv, playing with a green balloon dog. </p>
+                        </div>
+                        <div class="last-storie_image-wrapper">
+                            <img src="/media/news-photo/17.jpg" class="last-storie_image" alt="PHOTO" />
+                        </div>
+                    </li>
+                    <li class="last-storie_list">
+                        <div class="last-storie_time">15:32</div>
+                        <div class="last-storie_content">
+                            <span class="last-storie_headline">WORLD</span>
+                            <h2 class="last-storie_title">France set down World Cup marker with superb Grand Slam</h2>
+                            <p class="last-storie_paragraph">PARIS - France's first Six Nations title for 12 years
+                                showed that Fabien Galthie's impressive team, who beat England in a party atmosphere at
+                                the Stade de France, will be hard to stop at the World Cup on home soil next year. </p>
+                        </div>
+                        <div class="last-storie_image-wrapper">
+                            <img src="/media/news-photo/18.jpg" class="last-storie_image" alt="PHOTO" />
+                        </div>
+                    </li>
+                    <li class="last-storie_list">
+                        <div class="last-storie_time">17:22</div>
+                        <div class="last-storie_content">
+                            <span class="last-storie_headline">WORLD</span>
+                            <h2 class="last-storie_title">Texan princess in a gilded cage</h2>
+                            <p class="last-storie_paragraph">Princess Rita Boncompagni Ludovisi wasted no time in
+                                pointing out the selling points of her home, the Villa Aurora, a 16th-century estate,
+                                smack in the centre of Rome, loaded with masterpiece paintings, historical archives and
+                                noble family lore.</p>
+                        </div>
+                        <div class="last-storie_image-wrapper">
+                            <img src="/media/news-photo/19.jpg" class="last-storie_image" alt="PHOTO" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4><a href="/index.html"> <img src="../media/icons/BP-logo.png" style="width: 10rem;"></a></h4>
+                    <ul>
+                        <li><a href="./thailand-news.html">THAILAND</a></li>
+                        <li><a href="./world-news.html">WORLD</a></li>
+                        <li><a href="./news-search.html">SEARCH™</a></li>
+                        <li><a href="./subscribe.html">SUBSCRIBE</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/bangkokpost" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/bangkokpostnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/bangkokpost_official/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
