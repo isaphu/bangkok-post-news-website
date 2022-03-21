@@ -80,6 +80,7 @@
         </footer>
     </div>
 
+    <script type='text/javascript' src='config.js'></script>
     <script>
         var menuList = document.getElementById("menuList");
         menuList.style.maxHeight = "0px"
@@ -111,10 +112,10 @@
 
             e.preventDefault()
 
-            const apiKey = '6733185c550e432aa898cfc301f9be8d'
+            const token = config.apiKey;
             let topic = input.value;
 
-            let url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`
+            let url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${token}`
 
             fetch(url).then((res) => {
                 return res.json()
