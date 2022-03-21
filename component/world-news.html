@@ -35,18 +35,6 @@
         <div class="main-area">
             <div class="country-label">WORLD</div>
             <div class="slide_wrapper">
-                <div class="slide_control">
-                    <button class="slide_to-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-                        </svg>
-                    </button>
-                    <button class="slide_to-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
-                        </svg>
-                    </button>
-                </div>
                 <div class="slide_inner">
                     <div class="recommend-storie_card">
                         <div class="recommend-storie_image-wrapper">
@@ -206,19 +194,8 @@
         </footer>
     </div>
 
-    <script>
-        var menuList = document.getElementById("menuList");
-        menuList.style.maxHeight = "0px"
-
-        function toggleMenu() {
-            if (menuList.style.maxHeight == "0px") {
-                menuList.style.maxHeight = "130px"
-            } else {
-                menuList.style.maxHeight = "0px"
-            }
-        }
-
-    </script>
+    <script src="/js/toggle-menu.js"></script>
+    <script src="/js/display-carousel.js"></script>
 </body>
 
 </html>
