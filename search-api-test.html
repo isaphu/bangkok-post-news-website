@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./media/icons/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Noto+Serif+Display&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/search-api-test.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Bangkok Post - Breaking News | Thailand News | Worldwide News</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <div class="navbar">
+                <img onclick="window.location.href='home-page.html'" src="./media/icons/BP-logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="./component/thailand-news.html">THAILAND</a></li>
+                        <li><a href="./component/world-news.html">WORLD</a></li>
+                        <li><a href="./component/economic-news.html">ECONOMIC</a></li>
+                        <li><a href="./component/subscribe.html">SUBSCRIBE</a></li>
+                    </ul>
+                </nav>
+                <img src="./media/icons/menu-icon.png" class="menu-icon" onClick="toggleMenu()" />
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="row">
+                <div class="col-1">
+                    <form class="search" action="">
+                        <label for="">News</label></br>
+                        <input class="input" type="text" /></br>
+                        <button id="submit-btn" type="submit">Submit query<img src="./media/icons/arrow-icon.png"></button>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <div class="list-container">
+                        <ul class="news-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4><a href="/home-page.html"> <img src="./media/icons/BP-logo.png" style="width: 10rem;"></a>
+                        </h4>
+                        <ul>
+                            <li><a href="./component/thailand-news.html">THAILAND</a></li>
+                            <li><a href="./component/world-news.html">WORLD</a></li>
+                            <li><a href="./component/economic-news.html">ECONOMIC</a></li>
+                            <li><a href="./component/subscribe.html">SUBSCRIBE</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/bangkokpost" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/bangkokpostnews" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/bangkokpost_official/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px"
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            } else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+    <script>
+        const searchForm = document.querySelector('.search');
+        const input = document.querySelector('.input');
+        const newsList = document.querySelector('.news-list');
+
+
+        searchForm.addEventListener('submit', retrieve)
+
+        function retrieve(e) {
+
+            if (input.value == '') {
+                alert('Input field is empty!')
+                return
+            }
+            newsList.innerHTML = ''
+
+            e.preventDefault()
+
+            const apiKey = '6733185c550e432aa898cfc301f9be8d'
+            let topic = input.value;
+
+            let url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`
+
+            fetch(url).then((res) => {
+                return res.json()
+            }).then((data) => {
+                console.log(data)
+                data.articles.forEach(articles => {
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.setAttribute('href', articles.url);
+                    a.setAttribute('target', '_blank');
+                    a.textContent = articles.title;
+                    li.append(a);
+                    newsList.appendChild(li);
+                })
+            }).catch((error) => {
+                console.log(error)
+            })
+        }
+    </script>
+</body>
+
+</html>
