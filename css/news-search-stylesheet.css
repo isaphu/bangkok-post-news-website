@@ -1,7 +1,6 @@
 .row-container {
   background-color: #deebf6;
-  /* margin: 8% 0; */
-  padding: 5% 5%;
+  padding: 11% 12%;
   width: 100%;
 }
 .row-container p {
@@ -12,6 +11,9 @@
   padding: 10px ;
   flex: 1;
   font-size: 1rem;
+}
+.row-container h2 p input button {
+  text-align: center;
 }
 .news-list {
   margin: 2%;

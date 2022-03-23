@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .gallery-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 500px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+    <title>Report</title>
+</head>
+
+<body>
+    <h1>Isa Phuyuthanon</h1>
+    <h2>Introduction</h2>
+    <p>
+        The news covered on my website are Thailand and World news.
+        User can also search any news from all over the world by using
+        SEARCH option in the menu. I am using News API for this option
+        sadly its not available for production.
+
+        The structure of my website inlcuding 5 html pages namely home page,
+        THAILAND (for Thai news), WORLD (for World news), SEARCH™, and Subscribe pages.
+        Coding wise, I seperated each CSS, HTML and JS in folder for easy readability.
+    </p>
+    <h2>Inspiration</h2>
+    <p>
+    <ul>
+        <li>Bangkok Post is my favorite local news paper</li>
+        <li>Blue is my favorite color therefore many of the component are blue</li>
+        <li>Bangkok Post website is very well implemented and is suitable for any size of devices</li>
+    </ul>
+    </p>
+    <h2>Accessibility</h2>
+    <p>
+    <ul>
+        <li>My website can help those who have visulally impaired access photo and video by using <i>alt</i> attribute
+        </li>
+        <li>Every button has its title making it easy for hearing impaired person to know what does the button do</li>
+        <li>I have try to put
+        <li>lang</li> attribute so that screen reader can read</li>
+    </ul>
+    </p>
+    <h2>Usability</h2>
+    <p>
+    <ul>
+        <li>People of all ages can use this website, the navigation is clear</li>
+        <li>People with difference size of device can see content without distruption, it is suitable for every device
+        </li>
+        <li>Menu, content and footer are designed based on the standard of W3 school</li>
+    </ul>
+    </p>
+    <h2>Learning</h2>
+    <p>
+    <ul>
+        <li>I have learnt CSS grid layout by W3 School and from google specifically from
+            https://css-tricks.com/snippets/css/complete-guide-grid/</li>
+        <li>I have learnt how to fetch data from API by watching videos, reading NEWSapi documentation from here:
+            https://newsapi.org/docs/endpoints/everything</li>
+        <li>I have learnt how make a slides using javascript where learnt from W3 school</li>
+    </ul>
+    </p>
+    <h2>Evaluation I</h2>
+    <p>
+        I am so pround with this project especially because I have zero experience with coding and designing website.
+        One aspect that I was scared was how do I make everything responsive because CSS concept is challenge to me but
+        I was able to do it because of the resources available online that have helped me a lot.
+
+        Another aspact that I think it is succesfully but very challenging was to implemented an API, but thank to many
+        video
+        explaining how to implemented it and how to use API from the documentation, I also learnt that literature
+        document is as
+        important as the actual function.
+    </p>
+    <h2>Evaluation II</h2>
+    <p>
+        Things I could improve are consistency in my website for example button are all different, font are different as
+        well. Next time
+        If I am doing it again, I would put more hours in designing; decide for color pallatte, using many standard
+        available in the website.
+    </p>
+    <h2>Resources</h2>
+    <p>
+    <ul>
+        <li>Implementing display-carousel function I have modified it from:
+            https://www.w3schools.com/howto/howto_js_slideshow.asp</li>
+        <li>Implementing NEWS API by using: https://newsapi.org/docs/endpoints/everything</li>
+        <li>Implementing retrieve-news using various source such as google.com, https://stackoverflow.com/</li>
+        <li>Google font: https://fonts.google.com/specimen/Heebo?query=heebo </li>
+        <li>Hiding API key: https://betterprogramming.pub/how-to-hide-your-api-keys-c2b952bc07e6</li>
+        <li>CSS grid: https://css-tricks.com/snippets/css/complete-guide-grid/</li>
+        <li>CSS flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/</li>
+    </ul>
+    </p>
+    <div class="appendice">
+        <h2>Appendices</h2>
+        <p>Click on the picture to enlarge</p>
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <a target="_blank" href="./appendices/appendices-1.png">
+                    <img src="./appendices/appendices-1.png" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Home page design</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="./appendices/appendices-2.png">
+                    <img src="./appendices/appendices-2.png" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">News pages design</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="./appendices/appendices-3.png">
+                    <img src="./appendices/appendices-3.png" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Nav bar and footer design</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="./appendices/appendices-4.jpg">
+                    <img src="./appendices/appendices-4.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Site map</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
